@@ -112,7 +112,7 @@
             </div>
 
             <div class="col-12 col-md-3 col-lg-2">
-                <div class="vertical-center">
+                <div class="vertical-center hor-sm-center">
                     <div class="top-actions d-flex justify-content-center align-items-center">
                         <a href="#" class="button button-green outline small" data-toggle="modal" data-target="#measurer">Вызвать
                             замерщика</a>
@@ -125,7 +125,7 @@
 </header>
 <nav class="navigation sticky-top">
     <div class="container">
-        <div id="cssmenu">
+        <ul id="cssmenu">
             <div class="button-mobile">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobilemenu"
                         aria-expanded="false">
@@ -133,11 +133,26 @@
                 </button>
             </div>
             <ul class="first-level " id="mobilemenu">
-                <li class='active'><a href='about-company.html'>О компании</a></li>
-                <li><a href='catalog.html'>Каталог продукции</a>
-                    <ul>
-                        <li class="has-sub"><a href='gorizontal-zhaluzi.html'>Жалюзи горизонтальные</a>
-                            <ul>
+
+                <li class="d-none d-md-inline-block"><a href='about-company.html'>О компании</a></li>
+                <li>
+                    <a href='catalog.html' class="d-none d-md-inline-block">Каталог продукции</a>
+                    <ul class="accordion" id="accordionExample">
+                        <li class="has-sub">
+                            <div id="heading-1" class="d-md-none">
+                                <a href='gorizontal-zhaluzi.html' class="collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">Жалюзи горизонтальные</a>
+                            </div>
+                            <div  id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordionExample">
+                                <ul>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>Аллюминиевые жалюзи</a></li>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>Деревянные жалюзи</a></li>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>Пластик под дерево</a></li>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>Бамбуковые жалюзи</a></li>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>Аллюминиевая система Исотра Хит</a></li>
+                                </ul>
+                            </div>
+                            <a href='gorizontal-zhaluzi.html' class="d-none d-md-block">Жалюзи горизонтальные</a>
+                            <ul class="d-none d-md-block">
                                 <li><a href='gorizontal-zhaluzi_vid.html'>Аллюминиевые жалюзи</a></li>
                                 <li><a href='gorizontal-zhaluzi_vid.html'>Деревянные жалюзи</a></li>
                                 <li><a href='gorizontal-zhaluzi_vid.html'>Пластик под дерево</a></li>
@@ -146,45 +161,105 @@
                             </ul>
                         </li>
                         <li class="has-sub">
-                            <a href='gorizontal-zhaluzi.html'>Жалюзи вертикальные</a>
-                            <ul>
-                                <li><a href='gorizontal-zhaluzi_vid.html'>Мультифактурные жалюзи</a></li>
-                                <li><a href='gorizontal-zhaluzi_vid.html'>Пластиковые жалюзи</a></li>
-                                <li><a href='gorizontal-zhaluzi_vid.html'>Фото жалюзи</a></li>
+                            <div id="heading-2" class="d-md-none">
+                                <a href='vertikal-zhaluzi.html'  class="collapsed" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">Жалюзи вертикальные</a>
+                            </div>
+                            <div id="collapse-2" class="collapse d-md-none" aria-labelledby="heading-2" data-parent="#accordionExample">
+                                <ul>
+                                    <li><a href='vertikal-zhaluzi_vid.html'>Мультифактурные жалюзи</a></li>
+                                    <li><a href='vertikal-zhaluzi_vid.html'>Пластиковые жалюзи</a></li>
+                                    <li><a href='vertikal-zhaluzi_vid.html'>Фото жалюзи</a></li>
+                                    <li><a href='vertikal-zhaluzi_tkani.html'>Каталог тканей</a></li>
+                                </ul>
+                            </div>
+                            <a href='vertikal-zhaluzi.html' class="d-none d-md-block">Жалюзи вертикальные</a>
+                            <ul class="d-none d-md-block">
+                                <li><a href='vertikal-zhaluzi_vid.html'>Мультифактурные жалюзи</a></li>
+                                <li><a href='vertikal-zhaluzi_vid.html'>Пластиковые жалюзи</a></li>
+                                <li><a href='vertikal-zhaluzi_vid.html'>Фото жалюзи</a></li>
                                 <li><a href='vertikal-zhaluzi_tkani.html'>Каталог тканей</a></li>
                             </ul>
                         </li>
                         <li class="has-sub">
-                            <a href='gorizontal-zhaluzi.html'>Рулонные шторы</a>
-                            <ul>
-                                <li><a href='gorizontal-zhaluzi_vid.html'>Закрытые системы</a></li>
-                                <li><a href='gorizontal-zhaluzi_vid.html'>Открытые системы</a></li>
-                                <li><a href='gorizontal-zhaluzi_vid.html'>Рулонные шторы день-ночь, Зебра</a></li>
-                                <li><a href='gorizontal-zhaluzi_vid.html'>Система день-ночь, Зебра 3D</a></li>
-                                <li><a href='vertikal-zhaluzi_tkani.html'>Каталог тканей</a></li>
+                            <div id="heading-3" class="d-md-none">
+                                <a href='rulon-shtory.html'  class="collapsed" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">Рулонные шторы</a>
+                            </div>
+                            <div id="collapse-3" class="collapse d-md-none" aria-labelledby="heading-3" data-parent="#accordionExample">
+                                <ul>
+                                    <li><a href='rulon-shtory_vid.html'>Закрытые системы</a></li>
+                                    <li><a href='rulon-shtory_vid.html'>Открытые системы</a></li>
+                                    <li><a href='rulon-shtory_vid.html'>Рулонные шторы день-ночь, Зебра</a></li>
+                                    <li><a href='rulon-shtory_vid.html'>Система день-ночь, Зебра 3D</a></li>
+                                    <li><a href='rulon-shtory_vid.html'>Каталог тканей</a></li>
+                                </ul>
+                            </div>
+                            <a href='rulon-shtory.html' class="d-none d-md-block">Рулонные шторы</a>
+                            <ul class="d-none d-md-block">
+                                <li><a href='rulon-shtory_vid.html'>Закрытые системы</a></li>
+                                <li><a href='rulon-shtory_vid.html'>Открытые системы</a></li>
+                                <li><a href='rulon-shtory_vid.html'>Рулонные шторы день-ночь, Зебра</a></li>
+                                <li><a href='rulon-shtory_vid.html'>Система день-ночь, Зебра 3D</a></li>
+                                <li><a href='rulon-shtory_vid.html'>Каталог тканей</a></li>
                             </ul>
                         </li>
                         <li class="has-sub">
-                            <a href='gorizontal-zhaluzi.html'>Римские шторы</a>
-                            <ul>
+                            <div id="heading-4" class="d-md-none">
+                                <a href='rim-shtory.html'  class="collapsed" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">Римские шторы</a>
+                            </div>
+                            <div id="collapse-4" class="collapse d-md-none" aria-labelledby="heading-4" data-parent="#accordionExample">
+                                <ul>
+                                    <li><a href='rim-shtory_modeli.html'>Модели Римских штор</a></li>
+                                    <li><a href='rim-shtory_decor.html'>Варианты декора</a></li>
+                                    <li><a href='vertikal-zhaluzi_tkani.html'>Каталог тканей</a></li>
+                                    <li><a href='rim-shtory_nanesenie.html'>Шторы с нанесением</a></li>
+                                </ul>
+                            </div>
+                            <a href='rim-shtory.html' class="d-none d-md-block">Римские шторы</a>
+                            <ul class="d-none d-md-block">
                                 <li><a href='rim-shtory_modeli.html'>Модели Римских штор</a></li>
                                 <li><a href='rim-shtory_decor.html'>Варианты декора</a></li>
                                 <li><a href='vertikal-zhaluzi_tkani.html'>Каталог тканей</a></li>
-                                <li><a href='rim-shtory_decor.html'>Шторы с нанесением</a></li>
+                                <li><a href='rim-shtory_nanesenie.html'>Шторы с нанесением</a></li>
                             </ul>
                         </li>
-                        <li><a href='gorizontal-zhaluzi.html'>Японские шторы</a></li>
+                        <li><a href='#'>Японские шторы</a></li>
                         <li class="has-sub">
-                            <a href='#'>Шторы плиссе</a>
-                            <ul>
+                            <div id="heading-5" class="d-md-none">
+                                <a href='plisse-shtory.html'  class="collapsed" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">Шторы плиссе</a>
+                            </div>
+                            <div id="collapse-5" class="collapse d-md-none" aria-labelledby="heading-5" data-parent="#accordionExample">
+                                <ul>
+                                    <li><a href='plisse-shtory_sistema.html'>Системы штор плиссе</a></li>
+                                    <li><a href='plisse-shtory_montazh.html'>Варианты монтажа</a></li>
+                                    <li><a href='vertikal-zhaluzi_tkani.html'>Каталог тканей</a></li>
+                                </ul>
+                            </div>
+                            <a href='plisse-shtory.html' class="d-none d-md-block">Шторы плиссе</a>
+                            <ul class="d-none d-md-block">
                                 <li><a href='plisse-shtory_sistema.html'>Системы штор плиссе</a></li>
                                 <li><a href='plisse-shtory_montazh.html'>Варианты монтажа</a></li>
                                 <li><a href='vertikal-zhaluzi_tkani.html'>Каталог тканей</a></li>
                             </ul>
                         </li>
                         <li class="has-sub">
-                            <a href='gorizontal-zhaluzi.html'>Маркизы (навесы)</a>
-                            <ul>
+                            <div id="heading-6" class="d-md-none">
+                                <a href='markizy.html'  class="collapsed" data-toggle="collapse" data-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">Маркизы (навесы)</a>
+                            </div>
+                            <div id="collapse-6" class="collapse d-md-none" aria-labelledby="heading-6" data-parent="#accordionExample">
+                                <ul>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>Система ЗИМНИЙ САД</a></li>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>С падающим локтем ATTICA</a></li>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>Кассетная базовая JUVENTA</a></li>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>Кассетная система SIROCCO</a></li>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>Рефлексол VERANDA</a></li>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>Ковшевая система</a></li>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>Терассная система Ассоль</a></li>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>Открытая базовая BREEZ</a></li>
+                                    <li><a href='gorizontal-zhaluzi_vid.html'>Открытая усиленная LIBERTY</a></li>
+                                </ul>
+                            </div>
+                            <a href='markizy.html' class="d-none d-md-block">Маркизы (навесы)</a>
+                            <ul class="d-none d-md-block">
                                 <li><a href='gorizontal-zhaluzi_vid.html'>Система ЗИМНИЙ САД</a></li>
                                 <li><a href='gorizontal-zhaluzi_vid.html'>С падающим локтем ATTICA</a></li>
                                 <li><a href='gorizontal-zhaluzi_vid.html'>Кассетная базовая JUVENTA</a></li>
@@ -200,12 +275,12 @@
                         <li><a href='okna.html'>Окна</a></li>
                     </ul>
                 </li>
-                <li><a href='oplata.html'>Оплата и гарантии</a></li>
-                <li><a href='polezno.html'>Полезно знать</a></li>
-                <li><a href='portfolio.html'>Наши работы</a></li>
-                <li><a href='contacts.html'>Контакты</a></li>
+                <li class="d-none d-md-inline-block"><a href='oplata.html'>Оплата и гарантии</a></li>
+                <li class="d-none d-md-inline-block"><a href='polezno.html'>Полезно знать</a></li>
+                <li class="d-none d-md-inline-block"><a href='portfolio.html'>Наши работы</a></li>
+                <li class="d-none d-md-inline-block"><a href='contacts.html'>Контакты</a></li>
             </ul>
-        </div>
+    </div>
     </div>
 </nav>
 <div class="modal fade custom-modal" id="measurer" tabindex="-1" role="dialog" aria-hidden="true">
@@ -230,41 +305,39 @@
         </div>
     </div>
 </div>
-<main class="pt-5 pb-90">
+<main class="page pt-5 pb-90">
     <!-- CONTENT -->
-    <section class="mt-5">
+    <section class="mb-5">
         <div class="container">
-            <h1 class="text-center pt-5 mb-53">Вид горизонтальных жалюзи</h1>
+            <h1 class="page-title h1">Вид горизонтальных жалюзи</h1>
 
             <div class="row">
                 <div class="col-md-4">
                     <!-- CATALOG SIDEBAR  -->
                     <div class="sidebar-catalog-list">
-                        <div class="sidebar-title" data-toggle="collapse" data-target="#sidebar-catalog-content">Фильтр <span class="caret"></span></div>
 
                         <ul id="sidebar-catalog-content" class="sidebar-catalog-content collapse out">
                             <li>
                                 <a href="#" data-toggle="collapse" data-target="#jalousie-horizontal"
-                                   class="sidebar-catalog-menu-item">Жалюзи горизонтальные <span class="caret"></span></a>
-                                <ul class="sub-menu collapse show" data-parent="#sidebar-catalog-content" id="jalousie-horizontal">
-                                    <li class="active"><a href="#">Алюминивые жалюзи</a></li>
-                                    <li><a href="#">Деревяные жалюзи</a></li>
-                                    <li><a href="#">Пластик под дерево</a></li>
-                                    <li><a href="#">Бамбуковые жалюзи</a></li>
-                                    <li><a href="#">Алюминивая система Исотра Хит</a></li>
+                                   class="sidebar-catalog-menu-item collapsed">Жалюзи горизонтальные <span class="caret"></span></a>
+                                <ul class="sub-menu collapse" data-parent="#sidebar-catalog-content" id="jalousie-horizontal">
+                                    <li class="active"><a href="gorizontal-zhaluzi_vid.html">Аллюминиевые жалюзи</a></li>
+                                    <li><a href="gorizontal-zhaluzi_vid.html">Деревяные жалюзи</a></li>
+                                    <li><a href="gorizontal-zhaluzi_vid.html">Пластик под дерево</a></li>
+                                    <li><a href="gorizontal-zhaluzi_vid.html">Бамбуковые жалюзи</a></li>
+                                    <li><a href="gorizontal-zhaluzi_vid.html">Алюминивая система Исотра Хит</a></li>
                                 </ul>
                             </li>
 
 
                             <li>
-                                <a href="#" data-toggle="collapse" data-target="#jalousie-vertical" class="sidebar-catalog-menu-item collapsed">Жалюзи
+                                <a href="#" data-toggle="collapse" data-target="#jalousie-vertical" class="sidebar-catalog-menu-item">Жалюзи
                                     вертикальные <span class="caret"></span></a>
-                                <ul class="sub-menu collapse" data-parent="#sidebar-catalog-content" id="jalousie-vertical">
-                                    <li><a href="#">Алюминивые жалюзи</a></li>
-                                    <li><a href="#">Деревяные жалюзи</a></li>
-                                    <li><a href="#">Пластик под дерево</a></li>
-                                    <li><a href="#">Бамбуковые жалюзи</a></li>
-                                    <li><a href="#">Алюминивая система Исотра Хит</a></li>
+                                <ul class="sub-menu collapse show" data-parent="#sidebar-catalog-content" id="jalousie-vertical">
+                                    <li><a href="vertikal-zhaluzi_vid.html">Мультифактурные жалюзи</a></li>
+                                    <li><a href="vertikal-zhaluzi_vid.html">Пластиковые жалюзи</a></li>
+                                    <li><a href="vertikal-zhaluzi_vid.html">Фото жалюзи</a></li>
+                                    <li><a href="vertikal-zhaluzi_vid.html">Каталог тканей</a></li>
                                 </ul>
                             </li>
 
@@ -273,11 +346,11 @@
                                 <a href="#" data-toggle="collapse" data-target="#roller-blinds" class="sidebar-catalog-menu-item collapsed">Рулонные
                                     шторы <span class="caret"></span></a>
                                 <ul class="sub-menu collapse" data-parent="#sidebar-catalog-content" id="roller-blinds">
-                                    <li><a href="#">Алюминивые жалюзи</a></li>
-                                    <li><a href="#">Деревяные жалюзи</a></li>
-                                    <li><a href="#">Пластик под дерево</a></li>
-                                    <li><a href="#">Бамбуковые жалюзи</a></li>
-                                    <li><a href="#">Алюминивая система Исотра Хит</a></li>
+                                    <li><a href="rulon-shtory_vid.html">Закрытые системы</a></li>
+                                    <li><a href="rulon-shtory_vid.html">Открытые системы</a></li>
+                                    <li><a href="rulon-shtory_vid.html">Рулонные шторы день-ночь, Зебра</a></li>
+                                    <li><a href="rulon-shtory_vid.html">Система день-ночь, Зебра 3D</a></li>
+                                    <li><a href="rulon-shtory_vid.html">Каталог тканей</a></li>
                                 </ul>
                             </li>
 
@@ -286,11 +359,10 @@
                                 <a href="#" data-toggle="collapse" data-target="#roman-curtains"
                                    class="sidebar-catalog-menu-item collapsed">Римские шторы <span class="caret"></span></a>
                                 <ul class="sub-menu collapse" data-parent="#sidebar-catalog-content" id="roman-curtains">
-                                    <li><a href="#">Алюминивые жалюзи</a></li>
-                                    <li><a href="#">Деревяные жалюзи</a></li>
-                                    <li><a href="#">Пластик под дерево</a></li>
-                                    <li><a href="#">Бамбуковые жалюзи</a></li>
-                                    <li><a href="#">Алюминивая система Исотра Хит</a></li>
+                                    <li><a href="rim-shtory_modeli.html">Модели Римских штор</a></li>
+                                    <li><a href="rim-shtory_decor.html">Варианты декора</a></li>
+                                    <li><a href="vertikal-zhaluzi_tkani.html">Каталог тканей</a></li>
+                                    <li><a href="rim-shtory_nanesenie.html">Шторы с нанесением</a></li>
                                 </ul>
                             </li>
 
@@ -304,11 +376,9 @@
                                 <a href="#" data-toggle="collapse" data-target="#curtains-wing" class="sidebar-catalog-menu-item collapsed">Шторы
                                     плиссе <span class="caret"></span></a>
                                 <ul class="sub-menu collapse" data-parent="#sidebar-catalog-content" id="curtains-wing">
-                                    <li><a href="#">Алюминивые жалюзи</a></li>
-                                    <li><a href="#">Деревяные жалюзи</a></li>
-                                    <li><a href="#">Пластик под дерево</a></li>
-                                    <li><a href="#">Бамбуковые жалюзи</a></li>
-                                    <li><a href="#">Алюминивая система Исотра Хит</a></li>
+                                    <li><a href="plisse-shtory_sistema.html">Системы штор плиссе</a></li>
+                                    <li><a href="plisse-shtory_montazh.html">Варианты монтажа</a></li>
+                                    <li><a href="vertikal-zhaluzi_tkani.html">Каталог тканей</a></li>
                                 </ul>
                             </li>
 
@@ -317,25 +387,30 @@
                                 <a href="#" data-toggle="collapse" data-target="#awnings" class="sidebar-catalog-menu-item collapsed">Маркизы
                                     (навесы) <span class="caret"></span></a>
                                 <ul class="sub-menu collapse" data-parent="#sidebar-catalog-content" id="awnings">
-                                    <li><a href="#">Алюминивые жалюзи</a></li>
-                                    <li><a href="#">Деревяные жалюзи</a></li>
-                                    <li><a href="#">Пластик под дерево</a></li>
-                                    <li><a href="#">Бамбуковые жалюзи</a></li>
-                                    <li><a href="#">Алюминивая система Исотра Хит</a></li>
+                                    <li><a href="#">Система ЗИМНИЙ САД</a></li>
+                                    <li><a href="#">С падающим локтем ATTICA</a></li>
+                                    <li><a href="#">Кассетная базовая JUVENTA</a></li>
+                                    <li><a href="#">Кассетная система SIROCCO</a></li>
+                                    <li><a href="#">Рефлексол VERANDA</a></li>
+                                    <li><a href="#">Ковшевая система</a></li>
+                                    <li><a href="#">Терассная система Ассоль</a></li>
+                                    <li><a href="#">Открытая базовая BREEZ</a></li>
+                                    <li><a href="#">Открытая усиленная LIBERTY</a></li>
                                 </ul>
                             </li>
 
 
                             <li>
-                                <a href="#" data-toggle="collapse" data-target="#protective-shutters" class="sidebar-catalog-menu-item collapsed">Защитные
+                                <a href="rollety.html" data-toggle="collapse" data-target="#protective-shutters" class="sidebar-catalog-menu-item collapsed">Защитные
                                     роллеты</a>
                             </li>
 
                             <li>
-                                <a href="#" data-toggle="collapse" data-target="#windows" class="sidebar-catalog-menu-item collapsed">Окна</a>
+                                <a href="okna.html" data-toggle="collapse" data-target="#windows" class="sidebar-catalog-menu-item collapsed">Окна</a>
                             </li>
 
                         </ul>
+
                     </div>
 
                 </div>
@@ -381,59 +456,90 @@
 
                         <h2 class="fs-20 text-center mt-2 mb-23 fw-400">Палитра</h2>
 
-                        <div class="palette mb-5">
-                            <div class="color">
-                                <a data-fancybox="gallery" href="images/big_pallete.png">
-                                    <img src="images/small_palette.png" alt="">
-                                </a>
+                        <div class="row palette mb-40">
+                            <div class="col-12 col-md-6 mb-20">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a data-fancybox="gallery" href="images/pallete.png">
+                                                    <img src="images/palette.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a data-fancybox="gallery" href="images/pallete.png">
+                                                    <img src="images/palette.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a data-fancybox="gallery" href="images/pallete.png">
+                                                    <img src="images/palette.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a data-fancybox="gallery" href="images/pallete.png">
+                                                    <img src="images/palette.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="color">
-                                <a data-fancybox="gallery" href="images/big_pallete.png">
-                                    <img src="images/small_palette.png" alt="">
-                                </a>
+                            <div class="col-12 col-md-6 mb-20">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a data-fancybox="gallery" href="images/pallete.png">
+                                                    <img src="images/palette.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a data-fancybox="gallery" href="images/pallete.png">
+                                                    <img src="images/palette.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a data-fancybox="gallery" href="images/pallete.png">
+                                                    <img src="images/palette.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a data-fancybox="gallery" href="images/pallete.png">
+                                                    <img src="images/palette.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="color">
-                                <a data-fancybox="gallery" href="images/big_pallete.png">
-                                    <img src="images/small_palette.png" alt="">
-                                </a>
-                            </div>
-                            <div class="color">
-                                <a data-fancybox="gallery" href="images/big_pallete.png">
-                                    <img src="images/small_palette.png" alt="">
-                                </a>
-                            </div>
-                            <div class="color">
-                                <a data-fancybox="gallery" href="images/big_pallete.png">
-                                    <img src="images/small_palette.png" alt="">
-                                </a>
-                            </div>
-                            <div class="color">
-                                <a data-fancybox="gallery" href="images/big_pallete.png">
-                                    <img src="images/small_palette.png" alt="">
-                                </a>
-                            </div>
-                            <div class="color">
-                                <a data-fancybox="gallery" href="images/big_pallete.png">
-                                    <img src="images/small_palette.png" alt="">
-                                </a>
-                            </div>
-                            <div class="color">
-                                <a data-fancybox="gallery" href="images/big_pallete.png">
-                                    <img src="images/small_palette.png" alt="">
-                                </a>
-                            </div>
-                            <div class="color">
-                                <a data-fancybox="gallery" href="images/big_pallete.png">
-                                    <img src="images/small_palette.png" alt="">
-                                </a>
-                            </div>
-                            <div class="color">
-                                <a data-fancybox="gallery" href="images/big_pallete.png">
-                                    <img src="images/small_palette.png" alt="">
-                                </a>
+                            <div class="col-12 col-md-6 mb-20">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a data-fancybox="gallery" href="images/pallete.png">
+                                                    <img src="images/palette.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a data-fancybox="gallery" href="images/pallete.png">
+                                                    <img src="images/palette.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
 
                         <div class="price-container text-center pt-3 mb-5">
                             <div class="price mb-4">Цена: от 2400 грн.</div>
@@ -470,7 +576,7 @@
                         </div>
 
                         <div class="text-center">
-                            <a href="#" class="more-link">Больше работ</a>
+                            <a href="portfolio.html" class="more-link">Больше работ</a>
                         </div>
 
                     </div>
@@ -497,7 +603,7 @@
                     <a href="tel:380686648825">+38 (068) 664-88-25</a>
                     <a href="tel:380509615800">+38 (050) 961-58-00</a>
                 </div>
-                <div class="footer-timetable mb-30">
+                <div class="footer-timetable mb-30 d-none d-lg-inline">
                     Пн - Пт: с 9:00 до 17:00,<br>
                     Сб: с 9:00 до 13:00
                 </div>

@@ -22,13 +22,13 @@ $(document).ready(function () {
         itemOnPage = 7;
     }
     else if (BreakPoint == 'lg') {
-        itemOnPage = 6;
+        itemOnPage = 7;
     }
     else if (BreakPoint == 'md') {
-        itemOnPage = 5;
+        itemOnPage = 7;
     }
     else if (BreakPoint == 'sm') {
-        itemOnPage = 4;
+        itemOnPage = 7;
     }
     else if (BreakPoint == 'xs') {
         itemOnPage = 3;
