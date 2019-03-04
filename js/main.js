@@ -82,4 +82,19 @@ $(document).ready(function () {
     //https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html
     $('.phone-mask').mask('(000) 000-00-00');
 
+    $(".fancybox").fancybox({
+        prevEffect: 'none',
+        nextEffect: 'none',
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        closeBtn: false,
+        scrolling: 'no',
+        margin: 0,
+        minWidth: 280,
+        helpers		: {
+            title	: { type : 'inside' },
+            buttons	: {}
+        }
+    });
+
 });
