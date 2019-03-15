@@ -13,18 +13,25 @@
     margin-left: 20px;
 }
 
-#cssmenu ul, #cssmenu ul li, #cssmenu ul li a, #cssmenu #head-mobile {
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #head-mobile {
     border: 0;
     list-style: none;
     line-height: 1;
     display: block;
-    position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: 0px;
     transition: all .25s ease;
+}
 
+#cssmenu ul,
+#cssmenu ul li a,
+#cssmenu #head-mobile {
+    position: relative;
 }
 
 #cssmenu:after, #cssmenu > ul:after {
@@ -147,7 +154,7 @@
 
 #cssmenu ul ul ul {
     margin-left: 100%;
-    top: 0
+    top: 5px;
 }
 
 #cssmenu ul ul li a {

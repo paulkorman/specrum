@@ -34,6 +34,14 @@ $(document).ready(function () {
         itemOnPage = 3;
     }
 
+    let clientWidht = document.body.clientWidth;
+    let k = 1200/550;
+    if(clientWidht > 1200) {
+        let pt = (clientWidht/k - 550)/2 + parseInt($(".main-layer").css('padding-top'), 10);
+
+        $(".main-layer").css('height', clientWidht/k );
+        $(".main-layer").css('padding-top', pt)
+    }
 
     // Анимация сетки категорий (Ховер)
     $(".сatalog-grid.style-1").mouseenter(function () {
