@@ -83,7 +83,7 @@ $(document).ready(function () {
         next: '<span></span>',
         last: '<span></span>',
         onPageClick: function (page, evt) {
-            console.log("Текущая страница " + evt);
+            //console.log("Текущая страница " + evt);
         }
     });
 

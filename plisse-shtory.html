@@ -134,15 +134,15 @@
             </div>
             <ul class="first-level " id="mobilemenu">
 
-                <li class="d-none d-md-inline-block"><a href='about-company.html'>О компании</a></li>
-                <li>
-                    <a href='catalog.html' class="d-none d-md-inline-block">Каталог продукции</a>
-                    <ul class="accordion" id="accordionExample">
+                <li><a href='about-company.html'>О компании</a></li>
+                <li class="position-relative has-sub-level-1 active">
+                    <a href='catalog.html'>Каталог продукции</a>
+                    <ul class="accordion d-none d-md-block" id="accordionExample">
                         <li class="has-sub">
                             <div id="heading-1" class="d-md-none">
-                                <a href='gorizontal-zhaluzi.html' class="collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">Жалюзи горизонтальные</a>
+                                <a href='gorizontal-zhaluzi.html' class="collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">Жалюзи горизонтальные</a>
                             </div>
-                            <div  id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordionExample">
+                            <div  id="collapse-1" class="collapse" aria-labelledby="heading-1" data-parent="#accordionExample">
                                 <ul>
                                     <li><a href='gorizontal-zhaluzi_vid.html'>Аллюминиевые жалюзи</a></li>
                                     <li><a href='gorizontal-zhaluzi_vid.html'>Деревянные жалюзи</a></li>
@@ -225,9 +225,9 @@
                         <li><a href='#'>Японские шторы</a></li>
                         <li class="has-sub">
                             <div id="heading-5" class="d-md-none">
-                                <a href='plisse-shtory.html'  class="collapsed" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">Шторы плиссе</a>
+                                <a href='plisse-shtory.html'  class="collapsed" data-toggle="collapse" data-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">Шторы плиссе</a>
                             </div>
-                            <div id="collapse-5" class="collapse d-md-none" aria-labelledby="heading-5" data-parent="#accordionExample">
+                            <div id="collapse-5" class="collapse d-md-none show" aria-labelledby="heading-5" data-parent="#accordionExample">
                                 <ul>
                                     <li><a href='plisse-shtory_sistema.html'>Системы штор плиссе</a></li>
                                     <li><a href='plisse-shtory_montazh.html'>Варианты монтажа</a></li>
@@ -275,10 +275,10 @@
                         <li><a href='okna.html'>Окна</a></li>
                     </ul>
                 </li>
-                <li class="d-none d-md-inline-block"><a href='oplata.html'>Оплата и гарантии</a></li>
-                <li class="d-none d-md-inline-block"><a href='polezno.html'>Полезно знать</a></li>
-                <li class="d-none d-md-inline-block"><a href='portfolio.html'>Наши работы</a></li>
-                <li class="d-none d-md-inline-block"><a href='contacts.html'>Контакты</a></li>
+                <li><a href='oplata.html'>Оплата и гарантии</a></li>
+                <li><a href='polezno.html'>Полезно знать</a></li>
+                <li><a href='portfolio.html'>Наши работы</a></li>
+                <li><a href='contacts.html'>Контакты</a></li>
             </ul>
     </div>
     </div>
@@ -315,13 +315,13 @@
             <div class="row">
                 <div class="col-md-4">
                     <!-- CATALOG SIDEBAR  -->
-                    <div class="sidebar-catalog-list">
+                    <div class="sidebar-catalog-list d-none d-md-block">
 
-                        <ul id="sidebar-catalog-content" class="sidebar-catalog-content collapse out">
+                        <ul id="sidebar-catalog-content" class="sidebar-catalog-content out">
                             <li>
-                                <a href="#" data-toggle="collapse" data-target="#jalousie-horizontal"
+                                <a href="gorizontal-zhaluzi.html"
                                    class="sidebar-catalog-menu-item collapsed">Жалюзи горизонтальные <span class="caret"></span></a>
-                                <ul class="sub-menu collapse" data-parent="#sidebar-catalog-content" id="jalousie-horizontal">
+                                <ul class="sub-menu" id="jalousie-horizontal">
                                     <li class="active"><a href="gorizontal-zhaluzi_vid.html">Аллюминиевые жалюзи</a></li>
                                     <li><a href="gorizontal-zhaluzi_vid.html">Деревяные жалюзи</a></li>
                                     <li><a href="gorizontal-zhaluzi_vid.html">Пластик под дерево</a></li>
@@ -332,9 +332,9 @@
 
 
                             <li>
-                                <a href="#" data-toggle="collapse" data-target="#jalousie-vertical" class="sidebar-catalog-menu-item">Жалюзи
+                                <a href="vertikal-zhaluzi.html" class="sidebar-catalog-menu-item">Жалюзи
                                     вертикальные <span class="caret"></span></a>
-                                <ul class="sub-menu collapse show" data-parent="#sidebar-catalog-content" id="jalousie-vertical">
+                                <ul class="sub-menu" id="jalousie-vertical">
                                     <li><a href="vertikal-zhaluzi_vid.html">Мультифактурные жалюзи</a></li>
                                     <li><a href="vertikal-zhaluzi_vid.html">Пластиковые жалюзи</a></li>
                                     <li><a href="vertikal-zhaluzi_vid.html">Фото жалюзи</a></li>
@@ -344,9 +344,9 @@
 
 
                             <li>
-                                <a href="#" data-toggle="collapse" data-target="#roller-blinds" class="sidebar-catalog-menu-item collapsed">Рулонные
+                                <a href="rulon-shtory.html"class="sidebar-catalog-menu-item">Рулонные
                                     шторы <span class="caret"></span></a>
-                                <ul class="sub-menu collapse" data-parent="#sidebar-catalog-content" id="roller-blinds">
+                                <ul class="sub-menu" id="roller-blinds">
                                     <li><a href="rulon-shtory_vid.html">Закрытые системы</a></li>
                                     <li><a href="rulon-shtory_vid.html">Открытые системы</a></li>
                                     <li><a href="rulon-shtory_vid.html">Рулонные шторы день-ночь, Зебра</a></li>
@@ -357,9 +357,9 @@
 
 
                             <li>
-                                <a href="#" data-toggle="collapse" data-target="#roman-curtains"
-                                   class="sidebar-catalog-menu-item collapsed">Римские шторы <span class="caret"></span></a>
-                                <ul class="sub-menu collapse" data-parent="#sidebar-catalog-content" id="roman-curtains">
+                                <a href="rim-shtory.html"data-target="#roman-curtains"
+                                   class="sidebar-catalog-menu-item">Римские шторы <span class="caret"></span></a>
+                                <ul class="sub-menu" id="roman-curtains">
                                     <li><a href="rim-shtory_modeli.html">Модели Римских штор</a></li>
                                     <li><a href="rim-shtory_decor.html">Варианты декора</a></li>
                                     <li><a href="vertikal-zhaluzi_tkani.html">Каталог тканей</a></li>
@@ -369,14 +369,14 @@
 
 
                             <li>
-                                <a href="#" data-toggle="collapse" data-target="#japan-curtains" class="sidebar-catalog-menu-item collapsed">Японские
+                                <a href="#" class="sidebar-catalog-menu-item">Японские
                                     шторы </a>
                             </li>
 
-                            <li>
-                                <a href="#" data-toggle="collapse" data-target="#curtains-wing" class="sidebar-catalog-menu-item collapsed">Шторы
+                            <li class="active">
+                                <a href="plisse-shtory.html" class="sidebar-catalog-menu-item">Шторы
                                     плиссе <span class="caret"></span></a>
-                                <ul class="sub-menu collapse" data-parent="#sidebar-catalog-content" id="curtains-wing">
+                                <ul class="sub-menu" data-parent="#sidebar-catalog-content" id="curtains-wing">
                                     <li><a href="plisse-shtory_sistema.html">Системы штор плиссе</a></li>
                                     <li><a href="plisse-shtory_montazh.html">Варианты монтажа</a></li>
                                     <li><a href="vertikal-zhaluzi_tkani.html">Каталог тканей</a></li>
@@ -385,9 +385,9 @@
 
 
                             <li>
-                                <a href="#" data-toggle="collapse" data-target="#awnings" class="sidebar-catalog-menu-item collapsed">Маркизы
+                                <a href="markizy.html" class="sidebar-catalog-menu-item">Маркизы
                                     (навесы) <span class="caret"></span></a>
-                                <ul class="sub-menu collapse" data-parent="#sidebar-catalog-content" id="awnings">
+                                <ul class="sub-menu" id="awnings">
                                     <li><a href="#">Система ЗИМНИЙ САД</a></li>
                                     <li><a href="#">С падающим локтем ATTICA</a></li>
                                     <li><a href="#">Кассетная базовая JUVENTA</a></li>
@@ -402,12 +402,12 @@
 
 
                             <li>
-                                <a href="rollety.html" data-toggle="collapse" data-target="#protective-shutters" class="sidebar-catalog-menu-item collapsed">Защитные
+                                <a href="rollety.html" class="sidebar-catalog-menu-item">Защитные
                                     роллеты</a>
                             </li>
 
                             <li>
-                                <a href="okna.html" data-toggle="collapse" data-target="#windows" class="sidebar-catalog-menu-item collapsed">Окна</a>
+                                <a href="okna.html" class="sidebar-catalog-menu-item">Окна</a>
                             </li>
 
                         </ul>
