@@ -105,4 +105,23 @@ $(document).ready(function () {
         }
     });
 
+    //Переключение чекбоксов списка фильтров
+    $($('input.all-works')).change(function() {
+        if(this.checked) {
+            $('input.all-works').prop('checked', true);
+            $('#sidebar-catalog-content input:checked:not(".all-works")').each(function() {
+                $(this).prop('checked', false);
+            })
+        } else {
+            $('input.all-works').prop('checked', true);
+        }
+    });
+    $('#sidebar-catalog-content input[type=checkbox]:not(".all-works")').change(function() {
+        if(this.checked) {
+            $('input.all-works').prop('checked', false);
+        } else {
+            $(this).prop('checked', true);
+        }
+    });
+
 });
